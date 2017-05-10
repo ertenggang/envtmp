@@ -1,8 +1,7 @@
-FROM registry.cn-beijing.aliyuncs.com/zhuangwj/opencv:ubuntu14.04
+FROM registry.cn-qingdao.aliyuncs.com/zhuangwj/image_match2
 
 MAINTAINER qianyelin "422036876@qq.com"
 
-RUN curl https://bootstrap.pypa.io/get-pip.py > get-pip.py && python get-pip.py && rm get-pip.py
-RUN pip install flask
+RUN pip install --upgrade numpy
 
 EXPOSE 5000
